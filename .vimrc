@@ -1,6 +1,5 @@
-
-
-
+" VIM 配置
+"
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
@@ -54,10 +53,21 @@ let g:netrw_winsize = 25
 " *********************************************************************
 
 " ***************************    其他设置    **************************
+" 与 VI 不兼容
 set nocompatible
+" 换行删除
 set backspace=indent,eol,start
+
+" 去除备份文件
 set noswapfile
 set noundofile
-filetype plugin on
 
+" 显示行号
+set number
+
+" 缩进
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set autoindent
 " *********************************************************************
